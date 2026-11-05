@@ -465,25 +465,3 @@ a{color:inherit;}
   .feature-list li{border-right:0 !important; border-top:1px solid rgba(28,27,24,0.15) !important;}
   .feature-list li:first-child{border-top:0 !important;}
 }
-
-/* DESCARGAR */
-.download-box{
-  margin-top:1.5rem;
-  display:flex;
-  align-items:center;
-  gap:1rem;
-  flex-wrap:wrap;
-}
-.download-button{
-  display:inline-block;
-  font-family:var(--font-sans);
-  font-size:1rem;
-  font-weight:600;
-  text-decoration:none;
-  color:var(--paper);
-  background:var(--rust);
-  border:0;
-  padding:.8rem 1.6rem;
-  transition:background .2s;
-}
-.download-button:hover{ background:var(--rust-bright); }
