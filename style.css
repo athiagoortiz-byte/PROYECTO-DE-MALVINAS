@@ -481,13 +481,9 @@ a{color:inherit;}
   font-weight:600;
   text-decoration:none;
   color:var(--paper);
-  border:1px solid var(--rust);
+  background:var(--rust);
+  border:0;
   padding:.8rem 1.6rem;
   transition:background .2s;
 }
-.download-button:hover{ background:var(--rust); }
-.download-note{
-  margin:0;
-  color:var(--fog);
-  font-size:.9rem;
-}
+.download-button:hover{ background:var(--rust-bright); }
