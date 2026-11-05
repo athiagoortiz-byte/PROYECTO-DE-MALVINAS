@@ -30,6 +30,7 @@
       <a href="#linea-de-tiempo">Línea de tiempo</a>
       <a href="#galeria">Galería</a>
       <a href="#equipo">Equipo</a>
+      <a href="#jugar">Jugar</a>
     </nav>
   </div>
 </header>
@@ -204,7 +205,23 @@
       <p class="modal-caption" id="modalCaption"></p>
     </div>
   </div>
+  <!-- JUGAR -->
+  <section class="play" id="jugar">
+    <div class="section-inner">
+      <h2>Jugá la demo</h2>
+      <p class="play-note">Recomendado en computadora, con teclado y mouse. La primera carga puede tardar un poco.</p>
+      <div class="play-frame" id="playFrame">
+        <button class="play-button" id="playButton">▶ Jugar</button>
+      </div>
+    </div>
+  </section>
 
+  <script>
+    document.getElementById("playButton").addEventListener("click", function () {
+      var frame = document.getElementById("playFrame");
+      frame.innerHTML = '<iframe src="{{ url_for('static', filename='juego/index.html') }}" allow="autoplay; fullscreen" allowfullscreen></iframe>';
+    });
+  </script>
   <!-- EQUIPO -->
   <section class="team" id="equipo">
     <div class="section-inner">
